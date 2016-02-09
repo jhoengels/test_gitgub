@@ -1,0 +1,39 @@
+sobre github
+============
+
+1.- Agregar llave ssh
+
+a.- sudo apt-get install openssh-server
+b.- mkdir .ssh
+c.- ssh-keygen -t rsa -C "jhon18.26@gmail.com"
+    pass: jhonny
+d.- Agregamos el contenido de id_rsa.pub en github
+
+Comprobando conexión a guthub:
+------------------------------
+ssh git@github.com
+
+Hi jhoengels/test_gitgub! You've successfully authenticated, but GitHub does not provide shell access.
+Connection to github.com closed.
+
+Agregar usuarios:
+----------------
+git config --global user.name "Jhonny Martínez E." 
+agregar email:
+git config --global user.email "jhon18.26@gmail.com"
+
+Clonar un repositorio de github a la pc local
+---------------------------------------------
+
+git clone git@github.com:jhoengels/test_gitgub.git
+
+SOBRE GIT
+=========
+
+git status --> para ver el estado del respositorio
+git branch --> para ver la rama en la que estamos (lista las ramas)
+git add .  --> agrega todos los cambios al stage de git para que sea controlado.
+git commit -am "mensaje descriptivo para el commit" --> hace un commit
+
+
+
